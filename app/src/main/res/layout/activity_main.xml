@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.csaper6.colorpicker.MainActivity"
+    android:id="@+id/layout">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="R: 000"
+            android:id="@+id/textView_red"
+            android:layout_weight="1"
+            android:textColor="#ff0000"
+            android:textSize="20dp" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_red"
+            android:max="255"
+            android:thumbTint="#ff0000"
+            android:indeterminate="false"
+            android:layout_weight="3"
+            android:progressTint="#ff0000" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="G: 000"
+            android:id="@+id/textView_green"
+            android:layout_weight="1"
+            android:textColor="#00ff00"
+            android:textSize="20dp" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_green"
+            android:backgroundTint="#00ff00"
+            android:max="255"
+            android:thumbTint="#00ff00"
+            android:indeterminate="false"
+            android:layout_weight="3"
+            android:progressTint="#00ff00" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="B: 000"
+            android:id="@+id/textView_blue"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#0000ff" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar_blue"
+            android:thumbTint="#0000ff"
+            android:max="255"
+            android:backgroundTint="#0000ff"
+            android:indeterminate="false"
+            android:layout_weight="3"
+            android:progressTint="#0000ff" />
+    </TableRow>
+
+</TableLayout>
